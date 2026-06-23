@@ -13,9 +13,9 @@ int main(void)
 void calculate(int nums[], char a[])
 {
     int i, j, max_letter, min_letter, num;
-    for (i = 0; a[i] != '\0'; i++) // 算出每个字符出现次数
+    for (i = 0; a[i] != '\0'; i++)  // 算出每个字符出现次数
     {
-        nums[a[i] - 'a']++; // 关键算法,ACII码映射
+        nums[a[i] - 'a']++;         // 关键算法,ASCII码映射
     }
     max_letter = nums[0];
     min_letter = 10;
@@ -42,7 +42,7 @@ void is_prime(int s)
     }
     else
     {
-        for (n = 2; n*n < s; n++)
+        for (n = 2; n*n < s; n++)       //质数只用找到平方根
         {
             if (s % n == 0)
             {
